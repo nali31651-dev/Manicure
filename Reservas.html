@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservar Cita</title>
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Reservar Cita</span>
+        </div>
+    </header>
+
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            <form class="mdl-grid" id="formCita">
+
+
+                <div class="mdl-cell mdl-cell--6-col">
+                    <label>Nombre del cliente</label>
+                    <input class="mdl-textfield__input" type="text" id="cliente" required>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                    <label>manicurista</label>
+                    <select class="mdl-textfield__input" id="manicure">
+                        <option>Marta - Especialista en Tratamientos de las uñas</option>
+                        <option>Maria -  La aplicación de técnicas artísticas en la uñas</option>
+                        <option>Ana - Manicurista premium</option>
+                    </select>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                    <label>Fecha</label>
+                    <input class="mdl-textfield__input" type="date" id="fecha" required>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                    <label>Hora</label>
+                    <input class="mdl-textfield__input" type="time" id="hora" required>
+                </div>
+
+         
+
+<div class="mdl-cell mdl-cell--12-col">
+                    <label>Servicio</label>
+                    <select class="mdl-textfield__input" id="servicio">
+                        <option>uñas acrílicas</option>
+                        <option>uñas del gel </option>
+                        <option> uñas francesas</option>
+                        <option>diseños artísticos.</option>
+                    </select>
+                </div>
+ 
+                <button type="button"
+                    onclick="confirmarCita()"  
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                 Confirmar Cita  
+                </button>
+
+            </form>
+
+            <div id="resultado" style="margin-top: 20px; font-size: 18px;"></div>
+
+        </div>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
